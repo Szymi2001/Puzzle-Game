@@ -21,7 +21,7 @@ namespace szablon {
 		{
 			InitializeComponent();
 
-			puzzle = new Puzzle("dupa");
+			puzzle = new Puzzle("Puzzle");
 
 			buttons = gcnew array<Button^>(16);
 
@@ -29,20 +29,20 @@ namespace szablon {
 			{
 				for (int j = 0; j < 4; j++) 
 				{
-					int dupa = i * 4 + j;
+					int puzzle_btn = i * 4 + j;
 
-					buttons[dupa] = gcnew Button();
+					buttons[puzzle_btn] = gcnew Button();
 
-					buttons[dupa]->Left = 100 + j * 40;
-					buttons[dupa]->Top = 200 + i * 40;
-					buttons[dupa]->Width = 40;
-					buttons[dupa]->Height = 40;
-					buttons[dupa]->Tag = dupa;
+					buttons[puzzle_btn]->Left = 100 + j * 40;
+					buttons[puzzle_btn]->Top = 200 + i * 40;
+					buttons[puzzle_btn]->Width = 40;
+					buttons[puzzle_btn]->Height = 40;
+					buttons[puzzle_btn]->Tag = puzzle_btn;
 
-					buttons[dupa]->Click += gcnew System::EventHandler(this, &MainForm::click_puzzle);
-					buttons[dupa]->Enabled = false;
+					buttons[puzzle_btn]->Click += gcnew System::EventHandler(this, &MainForm::click_puzzle);
+					buttons[puzzle_btn]->Enabled = false;
 
-					Controls->Add(buttons[dupa]);
+					Controls->Add(buttons[puzzle_btn]);
 				}
 			}
 
@@ -74,7 +74,7 @@ namespace szablon {
 	private: System::Windows::Forms::MenuStrip^ menuStrip1;
 	private: System::Windows::Forms::ToolStripMenuItem^ plikToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ nowaGraToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^ wyjúcieToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ wyj≈ìcieToolStripMenuItem;
 	private: System::Windows::Forms::TextBox^ textBox1;
 	private: System::Windows::Forms::Button^ buttonLogin;
 	private: System::Windows::Forms::Label^ labelRuchy;
@@ -96,7 +96,7 @@ namespace szablon {
 			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
 			this->plikToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->nowaGraToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->wyjúcieToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->wyj≈ìcieToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->buttonLogin = (gcnew System::Windows::Forms::Button());
 			this->labelRuchy = (gcnew System::Windows::Forms::Label());
@@ -126,7 +126,7 @@ namespace szablon {
 			// 
 			this->plikToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
 				this->nowaGraToolStripMenuItem,
-					this->wyjúcieToolStripMenuItem
+					this->wyj≈ìcieToolStripMenuItem
 			});
 			this->plikToolStripMenuItem->Name = L"plikToolStripMenuItem";
 			this->plikToolStripMenuItem->Size = System::Drawing::Size(38, 20);
@@ -139,12 +139,12 @@ namespace szablon {
 			this->nowaGraToolStripMenuItem->Text = L"Nowa gra";
 			this->nowaGraToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainForm::nowaGraToolStripMenuItem_Click);
 			// 
-			// wyjúcieToolStripMenuItem
+			// wyj≈ìcieToolStripMenuItem
 			// 
-			this->wyjúcieToolStripMenuItem->Name = L"wyjúcieToolStripMenuItem";
-			this->wyjúcieToolStripMenuItem->Size = System::Drawing::Size(125, 22);
-			this->wyjúcieToolStripMenuItem->Text = L"Wyjúcie";
-			this->wyjúcieToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainForm::wyjúcieToolStripMenuItem_Click);
+			this->wyj≈ìcieToolStripMenuItem->Name = L"wyj≈ìcieToolStripMenuItem";
+			this->wyj≈ìcieToolStripMenuItem->Size = System::Drawing::Size(125, 22);
+			this->wyj≈ìcieToolStripMenuItem->Text = L"Wyj≈ìcie";
+			this->wyj≈ìcieToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainForm::wyj≈ìcieToolStripMenuItem_Click);
 			// 
 			// textBox1
 			// 
@@ -171,7 +171,7 @@ namespace szablon {
 			this->labelRuchy->Name = L"labelRuchy";
 			this->labelRuchy->Size = System::Drawing::Size(88, 13);
 			this->labelRuchy->TabIndex = 7;
-			this->labelRuchy->Text = L"Liczba ruchÛw: 0";
+			this->labelRuchy->Text = L"Liczba ruch√≥w: 0";
 			// 
 			// MainForm
 			// 
@@ -197,7 +197,7 @@ namespace szablon {
 	private: 
 		System::Void button1_Click(System::Object^ sender, System::EventArgs^ e);
 		System::Void click_puzzle(System::Object^ sender, System::EventArgs^ e);
-		System::Void wyjúcieToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
+		System::Void wyj≈ìcieToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
 		System::Void nowaGraToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
 		System::Void buttonLogin_Click(System::Object^ sender, System::EventArgs^ e);
 
