@@ -138,6 +138,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Image Include="images\image_empty.jpg" />
     <Image Include="images\image_part_0.jpg" />
     <Image Include="images\image_part_1.jpg" />
     <Image Include="images\image_part_2.jpg" />

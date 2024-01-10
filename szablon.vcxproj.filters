@@ -82,5 +82,8 @@
     <Image Include="images\image_part_15.jpg">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="images\image_empty.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>
