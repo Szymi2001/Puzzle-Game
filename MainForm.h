@@ -143,8 +143,8 @@ namespace szablon {
 			// 
 			this->wyjœcieToolStripMenuItem->Name = L"wyjœcieToolStripMenuItem";
 			this->wyjœcieToolStripMenuItem->Size = System::Drawing::Size(125, 22);
-			this->wyjœcieToolStripMenuItem->Text = L"Wyjœcie";
-			this->wyjœcieToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainForm::wyjœcieToolStripMenuItem_Click);
+			this->wyjœcieToolStripMenuItem->Text = L"Wyjscie";
+			this->wyjœcieToolStripMenuItem->Click += gcnew System::EventHandler(this, &MainForm::wyjscieToolStripMenuItem_Click);
 			// 
 			// textBox1
 			// 
@@ -171,7 +171,7 @@ namespace szablon {
 			this->labelRuchy->Name = L"labelRuchy";
 			this->labelRuchy->Size = System::Drawing::Size(88, 13);
 			this->labelRuchy->TabIndex = 7;
-			this->labelRuchy->Text = L"Liczba ruchów: 0";
+			this->labelRuchy->Text = L"Liczba ruchow: 0";
 			// 
 			// MainForm
 			// 
@@ -197,7 +197,7 @@ namespace szablon {
 	private: 
 		System::Void button1_Click(System::Object^ sender, System::EventArgs^ e);
 		System::Void click_puzzle(System::Object^ sender, System::EventArgs^ e);
-		System::Void wyjœcieToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
+		System::Void wyjscieToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
 		System::Void nowaGraToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e);
 		System::Void buttonLogin_Click(System::Object^ sender, System::EventArgs^ e);
 

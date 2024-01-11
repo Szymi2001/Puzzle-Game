@@ -32,7 +32,7 @@ namespace szablon
 		}
 	}
 
-	System::Void MainForm::wyjœcieToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e)
+	System::Void MainForm::wyjscieToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e)
 	{
 		Application::Exit();
 	}
@@ -72,6 +72,7 @@ namespace szablon
 			{
 				btn->Enabled = false;
 				btn->Text = "";
+				btn->BackgroundImage = Image::FromFile("images\\image_empty.jpg");
 			}
 			else
 			{
